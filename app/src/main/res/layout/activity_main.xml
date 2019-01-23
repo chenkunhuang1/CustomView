@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="20dp"
+    tools:context=".MainActivity">
+
+
+    <com.example.my.customview.QQStepView
+        android:id="@+id/step_View"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:borderWidth="12dp"
+        app:innerColor="@color/colorAccent"
+        app:outerColor="@color/colorPrimary"
+        app:stepTextColor="@color/colorAccent"
+        app:stepTextSize="36sp" />
+    <EditText
+        android:hint="maxStep"
+        android:id="@+id/max_edit_text"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_marginTop="10dp"
+        android:hint="currentStep"
+        android:id="@+id/current_edit_text"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_marginTop="10dp"
+        android:text="start"
+        android:id="@+id/start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
